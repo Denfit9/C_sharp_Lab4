@@ -10,11 +10,11 @@ namespace Lab4task2complete
     class Program
     {
         [DllImport("mymathlib.dll",CallingConvention = CallingConvention.Cdecl)]
-        static extern double Sum(double a, double b);
+        static extern int Sum(int a, int b);
         [DllImport("mymathlib.dll", CallingConvention = CallingConvention.StdCall)]
-        static extern double Max(double a, double b);
+        static extern int Max(int a, int b);
         [DllImport("mymathlib.dll", CallingConvention = CallingConvention.StdCall)]
-        static extern double Min(double a, double b);
+        static extern int Min(int a, int b);
 
         static int NumCheck()
         {
